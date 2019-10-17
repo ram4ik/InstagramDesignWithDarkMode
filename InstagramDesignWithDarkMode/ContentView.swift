@@ -107,21 +107,24 @@ struct Feeds: View {
                 Button(action: {
                     
                 }) {
-                    Image("comment").resizable().frame(width: 32, height: 32)
+                    Image("comment").resizable().frame(width: 30, height: 30)
                 }.foregroundColor(.white)
                 Spacer()
                 Button(action: {
                     
                 }) {
-                    Image("send").resizable().frame(width: 32, height: 32)
+                    Image("send").resizable().frame(width: 33, height: 33)
                 }.foregroundColor(.white)
                 Button(action: {
                     
                 }) {
-                     Image("saved").resizable().frame(width: 32, height: 32)
+                     Image("saved").resizable().frame(width: 30, height: 30)
                 }.foregroundColor(.white)
                 
             }.padding(8)
+            
+            Text("93 Likes")
+            Text("View All 90 Comments").padding(.top, 6)
         }
     }
 }
