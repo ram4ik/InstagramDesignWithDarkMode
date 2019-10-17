@@ -34,7 +34,7 @@ struct ContentView: View {
                 )
                 
             }.tabItem {
-                Image("Home")
+                Image("home")
             }
             
             Text("Find").tabItem {
@@ -47,7 +47,7 @@ struct ContentView: View {
                 Image("heart")
             }
             Text("bio").tabItem {
-                Image("person")
+                Image("people")
             }
         }
     }
@@ -69,7 +69,8 @@ struct HomePage: View {
                             VStack {
                                 Image("\(i)")
                                     .resizable()
-                                .clipShape(Circle())
+                                    .scaledToFill()
+                                    .clipShape(Circle())
                                     .frame(width: 80, height: 80)
                                     .overlay(Circle().stroke(lineWidth: 3).fill(Color.red))
                                     .padding(6)
