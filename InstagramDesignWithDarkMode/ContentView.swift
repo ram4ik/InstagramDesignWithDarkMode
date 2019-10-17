@@ -89,7 +89,7 @@ struct HomePage: View {
 
 struct Feeds: View {
     var body: some View {
-        VStack {
+        VStack(alignment: .leading, content: {
             HStack {
                 Image("1").resizable().frame(width: 30, height: 30).clipShape(Circle())
                 Text("User").fontWeight(.light)
@@ -125,6 +125,7 @@ struct Feeds: View {
             
             Text("93 Likes")
             Text("View All 90 Comments").padding(.top, 6)
-        }
+        })
     }
+
 }
