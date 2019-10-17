@@ -69,6 +69,7 @@ struct HomePage: View {
                             VStack {
                                 Image("\(i)")
                                     .resizable()
+                                .clipShape(Circle())
                                     .frame(width: 80, height: 80)
                                     .overlay(Circle().stroke(lineWidth: 3).fill(Color.red))
                                     .padding(6)
@@ -103,10 +104,23 @@ struct Feeds: View {
             Image("p1").resizable().frame(height: 300).padding([.top, .bottom], 8)
             
             HStack {
-                Image("comment").resizable().frame(width: 32, height: 32)
-                Image("send").resizable().frame(width: 32, height: 32)
+                Button(action: {
+                    
+                }) {
+                    Image("comment").resizable().frame(width: 32, height: 32)
+                }.foregroundColor(.white)
                 Spacer()
-                Image("saved").resizable().frame(width: 32, height: 32)
+                Button(action: {
+                    
+                }) {
+                    Image("send").resizable().frame(width: 32, height: 32)
+                }.foregroundColor(.white)
+                Button(action: {
+                    
+                }) {
+                     Image("saved").resizable().frame(width: 32, height: 32)
+                }.foregroundColor(.white)
+                
             }.padding(8)
         }
     }
